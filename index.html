@@ -3,81 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>besma | Dictionnaire de la langue française</title>
-<meta name="description" content="Une entrée de dictionnaire, rédigée pour une première place.">
-<meta property="og:title" content="Besma est entrée au dictionnaire">
-<meta property="og:description" content="Une entrée de dictionnaire, rédigée pour une première place.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e63950'/%3E%3Ccircle cx='22' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='42' cy='26' r='4' fill='%23fff'/%3E%3Cpath d='M16 38c4 12 28 12 32 0' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml">
+<title>Besma 1 : 0 Le Trac</title>
+<meta name="description" content="Compte rendu d’un match très serré entre Besma et Le Trac.">
+<meta property="og:title" content="Besma 1 : 0 Le Trac">
+<meta property="og:description" content="Compte rendu d’un match très serré entre Besma et Le Trac.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c1272d'/%3E%3Ccircle cx='22' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='42' cy='26' r='4' fill='%23fff'/%3E%3Cpath d='M16 38c4 12 28 12 32 0' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<p class="edition">Dictionnaire de la langue française, édition du 28 octobre 2026</p>
+<header class="board">
+  <p class="where">Match du 28 octobre 2026, scène d’éloquence</p>
+  <div class="score">
+    <div class="side"><span class="pts" id="sa">0</span><span class="name">Besma</span></div>
+    <div class="clock" id="clock">0:00</div>
+    <div class="side"><span class="pts" id="sb">0</span><span class="name">Le Trac</span></div>
+  </div>
+  <button id="go" class="btn" type="button">Coup d’envoi</button>
+  <p class="note">Durée réelle du match: 4 minutes. Durée du replay: 36 secondes.</p>
+</header>
 
-<main class="entry">
-  <h1 class="word">besma</h1>
-  <p class="meta">
-    <span class="ipa">/bɛs.ma/</span>
-    <em>nom propre féminin</em>
-    <button id="say" class="say" type="button" hidden>Écouter l’entrée</button>
-  </p>
-  <p class="tip">Le rédacteur a annoté chaque définition. Clique sur le bouton rouge, en bas de l’écran, pour lire ses notes.</p>
+<main>
+  <ol id="feed" class="feed" aria-live="polite"></ol>
 
-  <p class="ety"><b>Étymologie&nbsp;:</b> de l’arabe <span lang="ar" dir="rtl">بسمة</span> (<i>basma</i>), «&nbsp;sourire&nbsp;».</p>
+  <div id="after" class="after">
+    <section class="blk">
+      <h2>Statistiques du match</h2>
+      <div class="stat"><b>100 %</b><span>Possession de la parole</span></div>
+      <div class="stat"><b>0</b><span>Tir du Trac cadré</span></div>
+      <div class="stat"><b>0</b><span>Faute de français relevée par le commentateur. Il n’était pas dans la salle, il n’a rien relevé.</span></div>
+      <div class="stat"><b>Plein</b><span>Sourires provoqués. Le prénom l’avait annoncé.</span></div>
+    </section>
 
-  <ol class="senses">
-    <li>
-      <p>Sourire.</p>
-      <small class="note">Sens d’origine. Les suivants en sont la conséquence.</small>
-    </li>
-    <li>
-      <p>Personne qui monte sur scène avec le trac et en redescend avec la première place.</p>
-      <p class="ex">«&nbsp;Elle a parlé quatre minutes. Elle a gagné. C’est une besma.&nbsp;»</p>
-      <small class="note">Quatre minutes de discours. Une première place qui dure bien plus longtemps.</small>
-    </li>
-    <li>
-      <p><span class="reg">(soutenu)</span> Personne dont le français force l’admiration.</p>
-      <p class="ex">«&nbsp;Cette phrase est impeccable. Quelle besma.&nbsp;»</p>
-      <small class="note">Définition rédigée sans conflit d’intérêts. Presque.</small>
-    </li>
-  </ol>
+    <section class="blk talk">
+      <h2>Hors du terrain</h2>
+      <p>Avant le concours, tu avais dit que tu partais pour gagner. Il faut du courage pour le dire à voix haute, et du travail pour le tenir. Tu as tenu parole.</p>
+      <p>Je suis fier de toi.</p>
+      <p class="mb">Mabrouk, Besma. <span lang="ar" dir="rtl">مبروك</span></p>
+    </section>
 
-  <h2>Locutions</h2>
-  <dl>
-    <dt>Partir pour gagner</dt>
-    <dd>
-      <p>Aller à un concours avec l’intention d’être première, et le dire à voix haute.</p>
-      <p class="ex">«&nbsp;Besma est partie pour gagner.&nbsp;» Puis&nbsp;: «&nbsp;Besma a gagné.&nbsp;»</p>
-      <small class="note">Source primaire: l’intéressée. Elle a annoncé qu’elle partait pour gagner. Elle a tenu parole.</small>
-    </dd>
-    <dt>Avoir le trac comme Besma</dt>
-    <dd>
-      <p>Avoir le trac et gagner quand même.</p>
-      <p class="ex">«&nbsp;J’ai le trac comme Besma.&nbsp;» «&nbsp;Alors tu vas gagner.&nbsp;»</p>
-      <small class="note">Hypothèse vérifiée le 28 octobre 2026.</small>
-    </dd>
-  </dl>
-
-  <p class="rel"><b>Synonymes&nbsp;:</b> lauréate, première, gagnante. <b>Antonymes&nbsp;:</b> trac, doute, deuxième place.</p>
-  <small class="note">Chaque synonyme est confirmé par un jury.</small>
-
-  <h2>Histoire du mot</h2>
-  <p>Première attestation: 28 octobre 2026, concours d’éloquence. Emploi en forte croissance depuis.</p>
-  <small class="note">Un seul locuteur pour l’instant. Très motivé.</small>
-
-  <p class="rel"><b>Voir aussi&nbsp;:</b> <i>mabrouk</i> (<span lang="ar" dir="rtl">مبروك</span>), interjection. Félicitations.</p>
-  <p class="ex">«&nbsp;Mabrouk, Besma.&nbsp;»</p>
-
-  <section class="letter">
-    <h2>Note du rédacteur</h2>
-    <p>Besma, tu as dit que tu partais pour gagner. Il faut du courage pour le dire avant le concours. Il faut du talent pour le prouver après. Tu as fait les deux.</p>
-    <p>Bravo. Je suis content pour toi.</p>
-    <p class="sig">Diae</p>
-  </section>
+    <section class="blk">
+      <h2>Ton certificat</h2>
+      <canvas id="cert" aria-label="Certificat de première place décerné à Besma Douqchi"></canvas>
+      <button id="dl" class="btn" type="button">Télécharger mon certificat</button>
+    </section>
+  </div>
 </main>
-
-<button id="pen" class="penbtn pulse" type="button" aria-pressed="false">✎ Active le stylo rouge</button>
 <script type="module" src="/main.js"></script>
 </body>
 </html>
