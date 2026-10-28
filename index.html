@@ -3,53 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Besma 1 : 0 Le Trac</title>
-<meta name="description" content="Compte rendu d’un match très serré entre Besma et Le Trac.">
-<meta property="og:title" content="Besma 1 : 0 Le Trac">
-<meta property="og:description" content="Compte rendu d’un match très serré entre Besma et Le Trac.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c1272d'/%3E%3Ccircle cx='22' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='42' cy='26' r='4' fill='%23fff'/%3E%3Cpath d='M16 38c4 12 28 12 32 0' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>Bravo Besma</title>
+<meta name="description" content="Un mot pour une première place.">
+<meta property="og:title" content="Bravo Besma">
+<meta property="og:description" content="Un mot pour une première place.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23d9534f'/%3E%3Ccircle cx='22' cy='26' r='4' fill='%23fff'/%3E%3Ccircle cx='42' cy='26' r='4' fill='%23fff'/%3E%3Cpath d='M16 38c4 12 28 12 32 0' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header class="board">
-  <p class="where">Match du 28 octobre 2026, scène d’éloquence</p>
-  <div class="score">
-    <div class="side"><span class="pts" id="sa">0</span><span class="name">Besma</span></div>
-    <div class="clock" id="clock">0:00</div>
-    <div class="side"><span class="pts" id="sb">0</span><span class="name">Le Trac</span></div>
-  </div>
-  <button id="go" class="btn" type="button">Coup d’envoi</button>
-  <p class="note">Durée réelle du match: 4 minutes. Durée du replay: 36 secondes.</p>
+<header class="hero">
+  <h1>Première place.</h1>
+  <p class="bravo">Bravo, Besma.</p>
 </header>
 
 <main>
-  <ol id="feed" class="feed" aria-live="polite"></ol>
+  <section class="blk rev">
+    <p>Quand tu m’as dit que tu partais pour gagner, j’ai eu confiance. Quand tu as gagné, j’ai été heureux.</p>
+  </section>
 
-  <div id="after" class="after">
-    <section class="blk">
-      <h2>Statistiques du match</h2>
-      <div class="stat"><b>100 %</b><span>Possession de la parole</span></div>
-      <div class="stat"><b>0</b><span>Tir du Trac cadré</span></div>
-      <div class="stat"><b>0</b><span>Faute de français relevée par le commentateur. Il n’était pas dans la salle, il n’a rien relevé.</span></div>
-      <div class="stat"><b>Plein</b><span>Sourires provoqués. Le prénom l’avait annoncé.</span></div>
-    </section>
+  <section class="blk">
+    <h2 class="rev">Ce que je n’aurais pas pu faire à ta place</h2>
+    <ol class="steps">
+      <li class="rev" style="--i:0">Parler quatre minutes devant un jury.</li>
+      <li class="rev" style="--i:1">Parler quatre minutes devant un jury, en français.</li>
+      <li class="rev" style="--i:2">Parler quatre minutes devant un jury, en français, avec le trac.</li>
+      <li class="rev" style="--i:3">Parler quatre minutes devant un jury, en français, avec le trac, et gagner.</li>
+    </ol>
+    <p class="rev punch">Moi, j’aurais quitté la salle à la ligne 2.</p>
+  </section>
 
-    <section class="blk talk">
-      <h2>Hors du terrain</h2>
-      <p>Avant le concours, tu avais dit que tu partais pour gagner. Il faut du courage pour le dire à voix haute, et du travail pour le tenir. Tu as tenu parole.</p>
-      <p>Je suis fier de toi.</p>
-      <p class="mb">Mabrouk, Besma. <span lang="ar" dir="rtl">مبروك</span></p>
-    </section>
+  <section class="blk rev">
+    <p>Tu m’avais dit que tu partais pour gagner. Tu aurais pu me prévenir que c’était déjà réglé. J’aurais été moins nerveux.</p>
+    <p>Je n’avais pas cette information. J’ai donc géré mon stress tout seul, comme un adulte, c’est-à-dire mal.</p>
+  </section>
 
-    <section class="blk">
-      <h2>Ton certificat</h2>
-      <canvas id="cert" aria-label="Certificat de première place décerné à Besma Douqchi"></canvas>
-      <button id="dl" class="btn" type="button">Télécharger mon certificat</button>
-    </section>
-  </div>
+  <section class="blk rev serious">
+    <h2>Sérieusement</h2>
+    <p>Le trac ne t’a pas arrêtée. Tu as fait ce que tu avais annoncé.</p>
+    <p>Je t’apprécie beaucoup, et je suis fier de toi. Ton courage, ton travail et ton français méritent cette première place.</p>
+    <p class="sig">Mabrouk, Besma. <span lang="ar" dir="rtl">مبروك</span></p>
+  </section>
+
+  <section class="blk rev">
+    <h2>Pour garder une trace</h2>
+    <canvas id="cert" aria-label="Certificat de première place décerné à Besma Douqchi"></canvas>
+    <button id="dl" class="btn" type="button">Télécharger mon certificat</button>
+  </section>
 </main>
+
+<footer class="rev">Si tu trouves une faute dans cette page, garde-la pour toi. Je veux profiter du moment.</footer>
 <script type="module" src="/main.js"></script>
 </body>
 </html>

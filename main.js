@@ -1,57 +1,11 @@
 import "./style.css";
 
 const $ = (id) => document.getElementById(id);
-const DUR = 36;
-const events = [
-  { m: 0, t: "Coup d’envoi. Besma entre en scène. Le Trac est déjà là. Il a pris de l’avance dans les vestiaires." },
-  { m: 1, t: "Le Trac tente une frappe sur les mains. Besma l’arrête et continue de parler." },
-  { m: 2, t: "Le Trac cherche un mot qui manque. Besma en a vingt en réserve." },
-  { m: 3, t: "BUT. Besma conclut son discours. Le Trac n’a pas touché le ballon.", goal: true },
-  { m: 4, t: "Coup de sifflet final. Besma 1, Le Trac 0. Le Trac demande qu’on change le règlement." }
-];
 
-let timer, shown = false;
-const feed = $("feed"), go = $("go"), clock = $("clock");
-
-function add(ev) {
-  const li = document.createElement("li");
-  if (ev.goal) { li.className = "goal"; $("sa").textContent = "1"; }
-  const b = document.createElement("b");
-  b.textContent = ev.m + "’";
-  const p = document.createElement("p");
-  p.textContent = ev.t;
-  li.append(b, p);
-  feed.append(li);
-  li.scrollIntoView({ behavior: "smooth", block: "nearest" });
-}
-
-go.addEventListener("click", () => {
-  clearInterval(timer);
-  feed.innerHTML = "";
-  $("sa").textContent = "0";
-  $("sb").textContent = "0";
-  clock.textContent = "0:00";
-  go.disabled = true;
-  go.textContent = "Match en cours";
-  const t0 = performance.now();
-  let i = 0;
-  timer = setInterval(() => {
-    const s = (performance.now() - t0) / 1000;
-    const mm = Math.min(240, Math.floor((s * 240) / DUR));
-    clock.textContent = Math.floor(mm / 60) + ":" + String(mm % 60).padStart(2, "0");
-    while (i < events.length && s >= (events[i].m * DUR) / 4) add(events[i++]);
-    if (s >= DUR + 2) {
-      clearInterval(timer);
-      go.disabled = false;
-      go.textContent = "Revoir le match";
-      $("after").classList.add("show");
-      if (!shown) {
-        shown = true;
-        setTimeout(() => $("after").scrollIntoView({ behavior: "smooth" }), 300);
-      }
-    }
-  }, 100);
-});
+const io = new IntersectionObserver((es) => es.forEach((e) => {
+  if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+}), { threshold: 0.2 });
+document.querySelectorAll(".rev").forEach((el) => io.observe(el));
 
 /* Certificat */
 const F = '"Newsreader", Georgia, "Times New Roman", serif';
