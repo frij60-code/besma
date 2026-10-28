@@ -47,13 +47,13 @@ async function drawCert() {
   x.fillStyle = INK; x.font = "400 40px " + F;
   let y = 550;
   y = wrap(x, "Pour avoir monté sur scène avec le trac, parlé pendant quatre minutes et en être redescendue avec la première place.", 800, y, 1180, 54) + 14;
-  y = wrap(x, "Le Trac a été informé de sa défaite. Il n’a pas fait appel.", 800, y, 1180, 54) + 14;
+  y = wrap(x, "Le Trac a été informé de sa défaite. Il n’a pas fait appel. Le pronostic de son supporter est confirmé.", 800, y, 1180, 54) + 14;
   wrap(x, "Ce certificat n’a aucune valeur officielle. Ta victoire en a une. Bravo pour ton courage, ton travail et ton français. Ton prénom veut dire sourire, et tu en as fait naître plusieurs aujourd’hui.", 800, y, 1180, 54);
   x.fillStyle = RED; x.beginPath(); x.arc(800, 985, 52, 0, Math.PI * 2); x.fill();
   x.fillStyle = "#fff"; x.font = "700 64px " + F; x.fillText("1", 800, 1007);
   x.fillStyle = INK; x.font = "italic 400 28px " + F;
   x.textAlign = "left"; x.fillText("Fait le 28 octobre 2026", 130, 1000);
-  x.textAlign = "right"; x.fillText("Ton supporter, qui a retenu son souffle", 1470, 1000);
+  x.textAlign = "right"; x.fillText("Ton supporter, qui n’a jamais douté", 1470, 1000);
 }
 drawCert();
 
